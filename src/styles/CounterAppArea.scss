@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,500;1,500&display=swap");
+
+// App Container Colors
+$app-color: rgb(106, 182, 176);
+$box-shadow-color: rgb(180, 211, 202);
+$text-box-color: rgb(251, 246, 235);
+$app-font: "Urbanist", sans-serif;
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 88vh;
+  padding: 20px;
+  background-color: $app-color;
+  font-family: $app-font;
+  font-style: italic;
+
+  .app-space {
+    width: 50%;
+  }
+
+  .app-element {
+    display: block;
+    margin: 10px 5px;
+    font-size: 1.1em;
+  }
+
+  #text-box {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 65%;
+    background-color: $text-box-color;
+    box-shadow: 1px 2px 5px $box-shadow-color;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-family: $app-font;
+  }
+
+  #text-box:focus {
+    outline: none;
+  }
+
+  p {
+    text-align: right;
+  }
+}
